@@ -1,0 +1,17 @@
+* {
+    --blue-light: #AEC5EB;
+    color: black;
+}
+/* ^this appleis to everything? learn */
+
+body {
+    background-color: var(--blue-light);
+    /* can use var defined above to make changes in multiple places */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* Text align is horizontal */
+    text-align: center;
+    /* align items is vertical */
+    align-items: center;
+}

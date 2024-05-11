@@ -55,5 +55,51 @@ nav a {
     padding: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    border-radius: 15%;
+    /* ^^ what's this? */
 }
 /* 11:16am 11/5/2024 listen to why don't need the dot */
+
+.training-option {
+    margin-top: 15dvw;
+    background-color: var(--orange);
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+.training-option img {
+    width: 75dvw;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+
+    .training-option {
+        margin-top: 15dvw;
+    }
+
+    .training-option img {
+        /* width: 25dvw;
+        height: 25dvh; */
+        /* object-fit: cover; */
+        /* ^^ strength photo is different shape. hard to make them all look good */
+        width: 250px;
+        height: 250px;
+        /* just for desktop? */
+    }
+}
+
+
+
+
+
+
+

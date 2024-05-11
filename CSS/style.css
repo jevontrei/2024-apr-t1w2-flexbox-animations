@@ -60,6 +60,11 @@ nav a {
 }
 /* 11:16am 11/5/2024 listen to why don't need the dot */
 
+nav a:hover {
+    background-color: var(--orange);
+    color: black;
+}
+
 .training-option {
     margin-top: 15dvw;
     background-color: var(--orange);
@@ -82,6 +87,10 @@ nav a {
         align-items: center;
     }
 
+    nav a:hover {
+        
+    }
+
     .training-option {
         margin-top: 15dvw;
     }
@@ -91,8 +100,8 @@ nav a {
         height: 25dvh; */
         /* object-fit: cover; */
         /* ^^ strength photo is different shape. hard to make them all look good */
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
         /* just for desktop? */
     }
 }

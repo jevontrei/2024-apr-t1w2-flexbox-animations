@@ -1,17 +1,59 @@
 * {
-    --blue-light: #AEC5EB;
-    color: black;
+  --blue-light: #aec5eb;
+  --orange: #ff715b;
+  color: black;
 }
-/* ^this appleis to everything? learn */
+/* ^this applies to everything? learn */
 
 body {
-    background-color: var(--blue-light);
-    /* can use var defined above to make changes in multiple places */
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    /* Text align is horizontal */
-    text-align: center;
-    /* align items is vertical */
-    align-items: center;
+  background-color: var(--blue-light);
+  /* can use var defined above to make changes in multiple places */
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  /* justify-content: baseline; */
+  /* ^^ unnecessary? */
+  flex-direction: column;
+  /* Text align is horizontal */
+  text-align: center;
+  /* align items is vertical */
+  align-items: center;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  /* Text align is horizontal */
+  text-align: center;
+  /* align items is vertical */
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: solid black5px;
+  border-radius: 50%;
+}
+
+.logo p {
+  background-color: black;
+  color: var(--orange);
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: black;
+    color: var(--blue-light);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+/* 11:16am 11/5/2024 listen to why don't need the dot */

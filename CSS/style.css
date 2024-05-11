@@ -22,9 +22,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  /* Text align is horizontal */
   text-align: center;
-  /* align items is vertical */
   align-items: center;
 }
 
@@ -36,7 +34,7 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  border: solid black5px;
+  border: solid black 5px;
   border-radius: 50%;
 }
 
@@ -49,66 +47,83 @@ header {
 }
 
 nav a {
-    text-decoration: none;
-    background-color: black;
-    color: var(--blue-light);
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: 15%;
-    /* ^^ what's this? */
+  text-decoration: none;
+  background-color: black;
+  color: var(--blue-light);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 15%;
+  /* ^^ what's this? */
 }
 /* 11:16am 11/5/2024 listen to why don't need the dot */
 
-nav a:hover {
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    background-color: black);
+  }
+  /* 50% {
+    background-color: var(--blue-light);
+  } */
+  100% {
+    transform: rotate(180deg);
     background-color: var(--orange);
-    color: black;
+  }
+  /* ^^ not working rn. try this vv */
+  /* from {background-color: red;}
+  to {background-color: yellow;} */
+}
+
+h1:hover {
+    animation: spin 1s infinite linear;
+}
+
+nav a:hover {
+  background-color: var(--orange);
+  color: black;
+  /* animation-name: spin;
+  animation-duration: 3s; */
+  animation: spin 3s infinite linear;
 }
 
 .training-option {
-    margin-top: 15dvw;
-    background-color: var(--orange);
-    padding: 1rem;
-    border-radius: 5%;
+  margin-top: 15dvw;
+  background-color: var(--orange);
+  padding: 1rem;
+  border-radius: 5%;
 }
 
 .training-option img {
-    width: 75dvw;
-    border-radius: 5%;
+  width: 75dvw;
+  border-radius: 5%;
 }
 
 @media screen and (min-width: 600px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-around;
-        text-align: center;
-        align-items: center;
-    }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
 
-    nav a:hover {
-        
-    }
+  nav a {
+    font-size: 1.5rem;
+  }
 
-    .training-option {
-        margin-top: 15dvw;
-    }
+  .training-option {
+    margin-top: 15dvw;
+  }
 
-    .training-option img {
-        /* width: 25dvw;
+  .training-option img {
+    /* width: 25dvw;
         height: 25dvh; */
-        /* object-fit: cover; */
-        /* ^^ strength photo is different shape. hard to make them all look good */
-        width: 400px;
-        height: 400px;
-        /* just for desktop? */
-    }
+    /* object-fit: cover; */
+    /* ^^ strength photo is different shape. hard to make them all look good */
+    width: 400px;
+    height: 400px;
+    /* just for desktop? */
+  }
 }
-
-
-
-
-
-
-

@@ -82,6 +82,8 @@ h1:hover {
 nav a:hover {
   background-color: var(--orange);
   color: black;
+  display: inline-block;
+  /* ^^ this line finally got the rotation to work */
   /* animation-name: spin;
   animation-duration: 3s; */
   animation: spin 3s infinite linear;
